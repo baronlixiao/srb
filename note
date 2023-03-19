@@ -1,0 +1,15 @@
+slddz9296@HH
+github:lixiaobaron@163.com/github_0123，用户名：baronlixiao
+linux:root/root_0123
+
+=============linux中启动redis==============
+切换到redis安装的bin目录：cd /usr/local/bin
+启动redis：redis-server /etc/redis.conf
+linux窗口中启动redis：reids -cli
+linux窗口中关闭redis：
+    第一种方式：shutdown
+    第二种方式：ps -ef | grep redis 查出进程号，kill -9 进程号
+=============前端==============
+启动：npm run dev
+=============nginx==============
+cmd到E:\001devsoft\nginx-1.18.0目录下，输入nginx.exe
