@@ -29,7 +29,7 @@ public class ApiSmsController {
     private SmsService smsService;
 
     @Resource
-    private RedisTemplate redisTemplate;
+    private RedisTemplate redisTemplatessss;
 
     @ApiOperation("获取验证码")
     @GetMapping("/send/{mobile}")
@@ -51,7 +51,7 @@ public class ApiSmsController {
 //        smsService.send(mobile, SmsProperties.TEMPLATE_CODE, param);
 
         //将验证码存入redis
-        redisTemplate.opsForValue().set("srb:sms:code:" + mobile, code, 5, TimeUnit.MINUTES);
+        redisTemplatessss.opsForValue().set("srb:sms:code:" + mobile, code, 5, TimeUnit.MINUTES);
 
         return R.ok().message("短信发送成功");
     }
