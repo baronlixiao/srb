@@ -26,10 +26,10 @@ import java.util.concurrent.TimeUnit;
 public class ApiSmsController {
 
     @Resource
-    private SmsService smsServiceeee;
+    private SmsService smsService;
 
     @Resource
-    private RedisTemplate redisTemplate;
+    private RedisTemplate redisTemplateeeesss;
 
     @ApiOperation("获取验证码")
     @GetMapping("/send/{mobile}")
@@ -51,7 +51,7 @@ public class ApiSmsController {
 //        smsService.send(mobile, SmsProperties.TEMPLATE_CODE, param);
 
         //将验证码存入redis
-        redisTemplate.opsForValue().set("srb:sms:code:" + mobile, code, 5, TimeUnit.MINUTES);
+        redisTemplateeeesss.opsForValue().set("srb:sms:code:" + mobile, code, 5, TimeUnit.MINUTES);
 
         return R.ok().message("短信发送成功");
     }
