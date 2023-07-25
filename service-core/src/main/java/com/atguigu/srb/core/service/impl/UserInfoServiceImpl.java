@@ -37,6 +37,11 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
     @Resource
     private UserLoginRecordMapper userLoginRecordMapper;
 
+    @Resource
+    private UserLoginRecordMapper userLoginRecordMapper11;
+
+
+
     @Transactional(rollbackFor = {Exception.class})
     @Override
     public void register(RegisterVO registerVO) {
