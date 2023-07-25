@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 public class ApiSmsController {
 
     @Resource
-    private SmsService smsServicerrrreee;
+    private SmsService smsServicerr;
 
     @Resource
     private RedisTemplate redisTemplate;
